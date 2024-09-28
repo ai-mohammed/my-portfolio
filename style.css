@@ -135,15 +135,15 @@ nav ul li a.active, nav ul li a:hover {
 @media (max-width: 600px) {
     .profile-picture {
         position: absolute;
-        top: 11%; /* Ajouté pour aligner l'image correctement */
-        right: 23%;
+        top: 19%; /* Ajouté pour aligner l'image correctement */
+        right: 36%;
         background-color: #4169E1;
         padding: 7px;
         border-radius: 50%;
     }
 
     .profile-picture img {
-        width: 200px; /* S'assure que l'image prend tout l'espace */
+        width: 50px; /* S'assure que l'image prend tout l'espace */
         height: auto;
         border-radius: 50%;
     }
@@ -161,7 +161,7 @@ nav ul li a.active, nav ul li a:hover {
     }
 
     .profile-picture img {
-        width: 180px; /* S'assure que l'image prend tout l'espace */
+        width: 150px; /* S'assure que l'image prend tout l'espace */
         height: auto;
         border-radius: 50%;
     }
