@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden; /* Désactive le scroll */
 }
 
 body {
@@ -13,7 +12,6 @@ body {
     line-height: 1.6;
     position: relative;
     height: 100vh;
-    overflow: hidden; /* Empêche le scroll */
 
 }
 
@@ -71,7 +69,6 @@ nav ul li a.active, nav ul li a:hover {
     margin-top: 2%;
     height: calc(100vh - 100px); /* Réduction pour ajouter le footer */
     text-align: center;
-    overflow: hidden; /* Empêche le scroll vertical */
 }
 
 .content {
@@ -167,27 +164,6 @@ nav ul li a.active, nav ul li a:hover {
     }
 }
 
-
-@media (max-width: 500px) {
-    .intro {
-        position: absolute;
-        top: 40%; /* Ajusté à 30% pour centrer verticalement */
-        left: 5%;
-    }
-
-    .intro h2 {
-        font-size: 2rem;
-    }
-
-    .intro h3 {
-        font-size: 1.5rem;
-    }
-
-    .btn {
-        padding: 10px 20px;
-    }
-
-}
 
 /* Footer */
 footer {
