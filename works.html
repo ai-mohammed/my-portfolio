@@ -112,26 +112,73 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
+
+                /* Styles for the specific carousel card */
+        .carousel-card {
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.4s, box-shadow 0.4s;
+            position: relative;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-image {
+            min-width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .carousel-card .prev-btn,
+        .carousel-card .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel-card .prev-btn {
+            left: 10px;
+        }
+
+        .carousel-card .next-btn {
+            right: 10px;
+        }
+
     </style>
 </head>
 <body>
- <!-- Header -->
- <header>
-    <div class="container2">
-        <div class="logo">
-            <img src="logo.png" alt="Logo" class="logo-image">
+    <!-- Header -->
+    <header>
+        <div class="container2">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo-image">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="works.html"  class="active">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="works.html" class="active">Works</a></li>
-                <li><a href="contact.html" >Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
+    </header>
 
     <!-- Main Content -->
     <div class="container mx-auto px-6 py-12">
@@ -142,7 +189,7 @@
             <div class="grid-container">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <img src="path-to-your-image1.jpg" alt="Iris Image Annotation" class="project-image">
+                    <img src="R1.jpeg" alt="Iris Image Annotation" class="project-image">
                     <div class="project-info">
                         <h3>Semi-Automated Iris Image Annotation Tool</h3>
                         <p>IDEMIA, Courbevoie, France (April 2024 - June 2024)</p>
@@ -151,7 +198,7 @@
                 </div>
                 <!-- Project 2 -->
                 <div class="project-card">
-                    <img src="path-to-your-image2.jpg" alt="Data Visualization Tools" class="project-image">
+                    <img src="R2.jpeg" alt="Data Visualization Tools" class="project-image">
                     <div class="project-info">
                         <h3>Data Visualization Tools Development</h3>
                         <p>IDEMIA, Courbevoie, France (June 2023)</p>
@@ -166,21 +213,104 @@
             <h2 class="section-title">Academic & Personal AI Projects</h2>
             <div class="grid-container">
                 <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="path-to-your-image3.jpg" alt="Machine Learning" class="project-image">
+                <div class="project-card carousel-card">
+                    <div class="carousel-container">
+                        <div class="carousel-images">
+                            <img src="siteweb2projet\image1.png" alt="Search" class="carousel-image">
+                            <img src="siteweb2projet\image2.png" alt="Admin Page" class="carousel-image">
+                            <img src="siteweb2projet\image3.png" alt="Admin Page" class="carousel-image">
+                        </div>
+                        <button class="prev-btn" onclick="prevSlideCarousel()">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlideCarousel()">&#10095;</button>
+                    </div>
                     <div class="project-info">
-                        <h3>Machine Learning & Data Manipulation</h3>
-                        <p>Worked on AI projects handling large datasets, applying machine learning models to address complex data problems using Python.</p>
+                        <h3>ONLINE LIBRARY</h3>
+                        <p>Developed using HTML, CSS, JavaScript, PHP, and MySQL as part of a team of 3 people.</p>
                     </div>
                 </div>
+                <!-- Project 4 -->
+                <div class="project-card carousel-card">
+                    <div class="carousel-container">
+                        <div class="carousel-images">
+                            <img src="siteweb1projet\image.png" alt="Home page" class="carousel-image">
+                            <img src="siteweb1projet\image2.png" alt="Dashboard page" class="carousel-image">
+                            <img src="siteweb1projet\image3.png" alt="Dashboard page" class="carousel-image">
+                        </div>
+                        <button class="prev-btn" onclick="prevSlideCarousel()">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlideCarousel()">&#10095;</button>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Web site</h3>
+                        <p>Developed using HTML, CSS, JavaScript as part of a team of 3 people.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card carousel-card">
+                    <div class="carousel-container">
+                        <div class="carousel-images">
+                            <img src="MLproject\image1.png" alt="Data" class="carousel-image">
+                            <img src="MLproject\image2.png" alt="Data" class="carousel-image">
+                            <img src="MLproject\image3.png" alt="Data" class="carousel-image">
+                            <img src="MLproject\image4.png" alt="Data " class="carousel-image">
+                        </div>
+                        <button class="prev-btn" onclick="prevSlideCarousel()">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlideCarousel()">&#10095;</button>
+                    </div>
+                    <div class="project-info">
+                        <h3>Freediving Results Analysis and Prediction: Exploration, Clustering, and Forecasting</h3>
+                        <p>This project explores freediving competition data, performs exploratory data analysis (EDA), clusters to identify reasons for red cards, and predicts diver performance outcomes.</p>
+                    </div>
+                </div>
+                   <!-- Project 5 -->
+                <div class="project-card carousel-card">
+                    <div class="carousel-container">
+                        <div class="carousel-images">
+                            <img src="cloudproject\Image1.png" alt="Data" class="carousel-image">
+                            <img src="cloudproject\Image2.png" alt="Data" class="carousel-image">
+                            <img src="cloudproject\Image3.png" alt="technology used " class="carousel-image">
+                        </div>
+                        <button class="prev-btn" onclick="prevSlideCarousel()">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlideCarousel()">&#10095;</button>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cloud Architecture for Monitoring Urban Vertical Farms</h3>
+                        <p>This project designs a cloud-based architecture to monitor urban vertical farms, integrating real-time sensor data reception, historical data storage, and an intuitive user interface for operators. It also features anomaly detection to promptly alert operators about potential issues with sensors or crops.</p>
+                    </div>
+                </div>
+
+
+
+
                 <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="path-to-your-image4.jpg" alt="AI Digital Marketing" class="project-image">
+                <div class="project-card carousel-card">
+                    <div class="carousel-container">
+                        <div class="carousel-images">
+                            <img src="Javaproject\image.png" alt="chatbot" class="carousel-image">
+                            <img src="Javaproject\image2.png" alt="chatbot" class="carousel-image">
+                        </div>
+                        <button class="prev-btn" onclick="prevSlideCarousel()">&#10094;</button>
+                        <button class="next-btn" onclick="nextSlideCarousel()">&#10095;</button>
+                    </div>
                     <div class="project-info">
-                        <h3>Exploring AI for Digital Marketing</h3>
-                        <p>Used AI to enhance digital marketing strategies by analyzing customer behavior and optimizing campaigns for better engagement.</p>
+                        <h3>Chatbo using JAVA</h3>
+                        <p>This project is developing a Java-based AI assistant chatbot designed to provide information about its functionalities, offer couscous recipes, assist with technical issues, manage your agenda, deliver weather forecasts, and send emails. It will support both English and French languages and aims to enhance user experience with intuitive interaction. </p>
                     </div>
                 </div>
+            <!-- Project 6 -->
+            <div class="project-card carousel-card">
+                <div class="carousel-container">
+                    <video class="carousel-video" controls>
+                        <source src="football.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-info">
+                    <h3>Player Detection in Sports Videos Using YOLOv8</h3>
+                    <p>This project focuses on developing a player detection system for sports videos utilizing the YOLOv8 model. It aims to accurately identify and track players in real-time, enhancing game analysis and performance insights. The project is currently in progress.</p>
+                </div>
+            </div>
+                
             </div>
         </section>
 
@@ -210,3 +340,30 @@
     </div>
 </body>
 </html>
+
+
+<script>
+    document.querySelectorAll('.carousel-card').forEach((card) => {
+        let currentSlide = 0; // Track the current slide for each carousel
+        const images = card.querySelector('.carousel-images');
+        const totalSlides = card.querySelectorAll('.carousel-image').length;
+
+        // Function to go to the previous slide
+        card.querySelector('.prev-btn').addEventListener('click', () => {
+            currentSlide = (currentSlide === 0) ? totalSlides - 1 : currentSlide - 1;
+            updateCarousel();
+        });
+
+        // Function to go to the next slide
+        card.querySelector('.next-btn').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        // Function to update the carousel's visible image
+        function updateCarousel() {
+            const offset = -currentSlide * 100; // Adjust the offset based on the current slide
+            images.style.transform = `translateX(${offset}%)`; // Move the images
+        }
+    });
+</script>
