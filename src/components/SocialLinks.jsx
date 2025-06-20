@@ -12,7 +12,7 @@ const socialLinks = [
     displayName: "Let's Connect",
     subText: "on LinkedIn",
     icon: Linkedin,
-    url: "https://www.linkedin.com/in/javid-hashimi-54babb337/",
+    url: "https://www.linkedin.com/in/mohammed-addi-9858aa19b/",
     color: "#0A66C2",
     gradient: "from-[#0A66C2] to-[#0077B5]",
     isPrimary: true
@@ -22,7 +22,7 @@ const socialLinks = [
     displayName: "Instagram",
     subText: "@javiid_h",
     icon: Instagram,
-    url: "https://www.instagram.com/javiid_h/",
+    url: "https://www.instagram.com/mohammed.addi_/",
     color: "#E4405F",
     gradient: "from-[#833AB4] via-[#E4405F] to-[#FCAF45]"
   },
@@ -31,7 +31,7 @@ const socialLinks = [
     displayName: "Github",
     subText: "@JavWorks",
     icon: Github,
-    url: "https://github.com/JavvWorks",
+    url: "https://github.com/ai-mohammed",
     color: "#ffffff",
     gradient: "from-[#333] to-[#24292e]"
   }

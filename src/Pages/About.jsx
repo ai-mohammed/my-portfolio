@@ -217,14 +217,13 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              I'm a Computer Science student passionate about both front and back-end development. 
-              I focus on building dynamic and engaging digital experiences, always aiming to deliver the best possible solutions for every project.
-               Let's collaborate to bring your ideas to life and create innovative, future-ready solutions!
-            </p>
+            I'm an Artificial Intelligence student deeply passionate about solving real-world problems using technology.
+            My interests lie in combining AI, data, and web development to build smart, impactful solutions.
+            I'm always open to collaboration — let’s bring bold ideas to life and shape the future together.            </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
              <a
-  href="/NewResumeJav.pdf"
+  href="/NewResumeMo.pdf"
   download
   className="w-full lg:w-auto"
 >
