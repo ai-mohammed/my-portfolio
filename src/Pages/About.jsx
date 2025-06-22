@@ -118,14 +118,14 @@ const AboutPage = () => {
     const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
   
     // Date i started coding projects/programs
-    const startDate = new Date("2022-11-09");
+    const startDate = new Date("2022-12-09");
     const today = new Date();
     const experience = today.getFullYear() - startDate.getFullYear() - 
       (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
   
     return {
       totalProjects: 1,
-      totalCertificates: 1, // Only counting static award for now
+      totalCertificates: 4, // Only counting static award for now
       YearExperience: experience
     };
   }, []);

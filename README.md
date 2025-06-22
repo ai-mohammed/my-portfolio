@@ -12,7 +12,7 @@ Let me introduce myself — I’m **Mohammed ADDI**. On this occasion, I’d lik
 - SweetAlert2  
 
 **Website Link:**  
-[https://ai-mohammed.github.io/my-portfolio/](https://ai-mohammed.github.io/my-portfolio)  
+[https://mohammed-addi.netlify.app/](https://mohammed-addi.netlify.app/)  
 
 
 ---
