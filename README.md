@@ -33,7 +33,7 @@ Ensure that you have already installed:
 1. **Download this project:**  
 
    ```bash  
-   git clone https://github.com/Javid Hashimi/Portofolio_V5.git  
+   git clone https://github.com/ai-mohammed/my-portfolio.git  
    ```  
 
 2. **Install all dependencies:**  
