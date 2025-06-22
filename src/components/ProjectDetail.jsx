@@ -95,7 +95,7 @@ const projects = [
     "User reviews",
     "Loyalty program",
     "Authentication system"
-  ]},
+  ]}
   // Coming projects i can add as i please
 ];
 
