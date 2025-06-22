@@ -20,7 +20,7 @@ const socialLinks = [
   {
     name: "Instagram",
     displayName: "Instagram",
-    subText: "@javiid_h",
+    subText: "@mohammed.addi_",
     icon: Instagram,
     url: "https://www.instagram.com/mohammed.addi_/",
     color: "#E4405F",
@@ -29,7 +29,7 @@ const socialLinks = [
   {
     name: "GitHub",
     displayName: "Github",
-    subText: "@JavWorks",
+    subText: "@ai-mohammed",
     icon: Github,
     url: "https://github.com/ai-mohammed",
     color: "#ffffff",

@@ -19,13 +19,19 @@ import { Code, Award, Boxes } from "lucide-react";
 const projects = [
   {
     id: 1,
-    Title: "Mini Twitter App",
-    Description: "A simple Twitter clone app where users can register, log in, and post tweets.",
-    Link: "https://loki.trentu.ca/~javidhashimi/register.php", 
-    Img: "minix-register.png", 
+  Title: "ChainEats",
+  Description: "ChainEats is a multi-restaurant web app for reservations",
+  Link: "https://chain-eat.vercel.app/", 
+  Img: "/chaineat.png"
   },
 ];
 
+const certifications = [
+  { id: 1, image: "/certificates/cert1.jpeg" },
+  { id: 2, image: "/certificates/cert2.jpeg" },
+  { id: 3, image: "/certificates/cert3.jpg" },
+  { id: 4, image: "/certificates/cert4.jpg" },
+];
 
 // Separate ShowMore/ShowLess button component
 const ToggleButton = ({ onClick, isShowingMore }) => (
@@ -115,15 +121,15 @@ const techStacks = [
   { icon: "html.svg", language: "HTML" },
   { icon: "css.svg", language: "CSS" },
   { icon: "javascript.svg", language: "JavaScript" },
-  { icon: "tailwind.svg", language: "Tailwind CSS" },
+  { icon: "python.svg", language: "Python" },
   { icon: "reactjs.svg", language: "ReactJS" },
   { icon: "vite.svg", language: "Vite" },
   { icon: "nodejs.svg", language: "Node JS" },
   { icon: "bootstrap.svg", language: "Bootstrap" },
   { icon: "mysqllogo.svg", language: "MySQL" },
-  { icon: "MUI.svg", language: "Material UI" },
+  { icon: "java.svg", language: "JAVA" },
   { icon: "vercel.svg", language: "Vercel" },
-  { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "mongodb.svg", language: "MongoDB" },
 ];
 
 export default function FullWidthTabs() {
@@ -293,21 +299,18 @@ export default function FullWidthTabs() {
             )}
           </TabPanel>
           
-          <TabPanel value={value} index={1} dir={theme.direction}>
-  <div className="flex justify-center items-center w-full py-10">
-    <div className="relative bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 text-white flex flex-col justify-between h-[350px] w-[300px]">
-      <div className="text-3xl text-white/60 mb-4">❝</div>
-      <p className="text-lg font-medium text-gray-300 leading-relaxed flex-grow">
-        Achieved a GPA of 3.6 or higher in my first and second year at Trent University.
-      </p>
-      <div className="mt-4 flex items-center justify-between">  
-        <div>
-          <p className="text-sm font-semibold text-white">@ Trent U</p>
-          <p className="text-xs text-gray-400">Fall 2023</p>
-        </div>
-        <img src="/trentu-logo.png" className="w-10 h-10 rounded-full overflow-hidden border" />
+<TabPanel value={value} index={1} dir={theme.direction}>
+  <div className="flex flex-wrap justify-center items-center gap-6 py-10">
+    {certifications.map((cert, index) => (
+      <div
+        key={cert.id}
+        data-aos={index % 2 === 0 ? "zoom-in-up" : "zoom-in-down"}
+        data-aos-duration="1000"
+        className="w-full sm:w-[300px] md:w-[350px]"
+      >
+        <Certificate ImgSertif={cert.image} />
       </div>
-    </div>
+    ))}
   </div>
 </TabPanel>
 

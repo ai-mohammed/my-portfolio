@@ -80,16 +80,22 @@ const ProjectStats = ({ project }) => {
 };
 
 const projects = [
-  {
-    id: 1,
-    Title: "Mini Twitter App",
-    Description: "This mini social media platform enhances a basic app by integrating live weather updates and creating a custom API for retrieving user posts. The platform allows users to register, log in, post messages, and interact with others, using PHP for backend functionality and MySQL for database management. The Weatherstack API is incorporated to show live weather information based on the user’s location, while a custom API endpoint fetches posts from a specific user. AJAX is used for dynamic, seamless updates to the feed and weather data. The app is styled with CSS and utilizes PHP sessions for user login management.",
-    Link: "https://loki.trentu.ca/~javidhashimi/register.php", 
-    Img: "/minix-feed.png",
-    TechStack: ["JSON", "CSS", "PHP", "MYSQL", "AJAX"],
-    Github: "https://github.com/JavvWorks",
-    Features: ["User authentication", "Posting tweets", "Real-time updates", "Weather Integration", "Custom API", "Session Management"]
-  },
+{
+  id: 1,
+  Title: "ChainEats",
+  Description: "ChainEats is a web-based application designed to streamline the dining experience across multiple restaurant locations. Unlike traditional single-restaurant apps, ChainEats allows users to explore a network of restaurants, make reservations, browse menus, post reviews, and participate in a loyalty program. The app focuses on scalability and user experience, featuring secure authentication, a dynamic reservation system, and modern UI components.",
+  Link: "https://chain-eat.vercel.app/", 
+  Img: "/chaineat.png", 
+  TechStack: ["React", "Node.js", "Express", "MongoDB", "CSS"],
+  Github: "https://github.com/ai-mohammed/ChainEat", 
+  Features: [
+    "Multi-restaurant support",
+    "Online reservations",
+    "Menu browsing",
+    "User reviews",
+    "Loyalty program",
+    "Authentication system"
+  ]},
   // Coming projects i can add as i please
 ];
 

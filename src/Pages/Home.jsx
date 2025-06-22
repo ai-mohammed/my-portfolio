@@ -32,7 +32,7 @@ const MainTitle = memo(() => (
       <span className="relative inline-block mt-2">
         <span className="absolute -inset-2 bg-gradient-to-r from-[#6366f1] to-[#a855f7] blur-2xl opacity-20"></span>
         <span className="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">
-          Javid
+          Mohammed
         </span>
       </span>
     </h1>
@@ -78,11 +78,11 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["Computer Science Student", "Computer Enthusiast"];
-const TECH_STACK = ["React", "Javascript", "Node.js", "Tailwind"];
+const TECH_STACK = ["Python","React", "Javascript", "Node.js"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/JavvWorks" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/javid-hashimi-54babb337/" },
-  { icon: Instagram, link: "https://www.instagram.com/javiid_h/" }
+  { icon: Github, link: "https://github.com/ai-mohammed/" },
+  { icon: Linkedin, link: "https://www.linkedin.com/in/mohammed-addi-9858aa19b/" },
+  { icon: Instagram, link: "https://www.instagram.com/mohammed.addi_/" }
 ];
 
 const Home = () => {

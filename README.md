@@ -1,6 +1,6 @@
 # Portfolio 
 Hello everyone!  
-Let me introduce myself, I’m Javid Hashimi. On this occasion, I’d like to share the portfolio website project that I’ve developed.  
+Let me introduce myself — I’m **Mohammed ADDI**. On this occasion, I’d like to share the portfolio website project that I’ve developed to showcase my work, skills, and accomplishments.
 
 **Tech Stack used:**  
 - ReactJS  
@@ -12,7 +12,7 @@ Let me introduce myself, I’m Javid Hashimi. On this occasion, I’d like to sh
 - SweetAlert2  
 
 **Website Link:**  
-[https://www.javidhashimi.netlify.app/](https://www.javidhashimi.netlify.app)  
+[https://ai-mohammed.github.io/my-portfolio/](https://ai-mohammed.github.io/my-portfolio)  
 
 
 ---
