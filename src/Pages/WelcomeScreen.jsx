@@ -60,7 +60,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
       setTimeout(() => {
         onLoadingComplete?.();
       }, 1000);
-    }, 4000);
+    }, 4500);
     
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);
@@ -150,7 +150,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
   className="text-center"
   variants={childVariants}
   data-aos="fade-up"
-  data-aos-delay="1200"
+  data-aos-delay="700"
 >
   <div
     className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full relative group"

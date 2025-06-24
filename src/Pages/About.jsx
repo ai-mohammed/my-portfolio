@@ -217,9 +217,9 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-            I'm an Artificial Intelligence student deeply passionate about solving real-world problems using technology.
-            My interests lie in combining AI, data, and web development to build smart, impactful solutions.
-            I'm always open to collaboration — let’s bring bold ideas to life and shape the future together.            </p>
+            I’m an Artificial Intelligence student based in France, deeply passionate about harnessing technology to solve real-world problems. 
+            My journey blends AI, data science, and web development, driving me to create innovative and impactful solutions. I’m always eager to collaborate with others.
+            Let’s bring bold ideas to life and shape the future together.           </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
              <a

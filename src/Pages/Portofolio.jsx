@@ -24,6 +24,12 @@ const projects = [
   Link: "https://chain-eat.vercel.app/", 
   Img: "/chaineat.png"
   },
+  {
+  id: 2,
+  Title: "Football AI",
+  Description: "Football AI is a computer vision toolkit for tracking",
+  Img: "/football-ai.png"
+},
 ];
 
 const certifications = [
