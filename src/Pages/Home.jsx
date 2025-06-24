@@ -3,8 +3,10 @@ import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles } from "lucid
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { BrainCircuit, Cloud, Braces } from "lucide-react";
 
-// Memoized Components
+
+
 const StatusBadge = memo(() => (
   <div className="inline-block animate-float lg:mx-0" data-aos="zoom-in" data-aos-delay="400">
     <div className="relative group">
@@ -39,11 +41,13 @@ const MainTitle = memo(() => (
   </div>
 ));
 
-const TechStack = memo(({ tech }) => (
-  <div className="px-4 py-2 hidden sm:block rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-gray-300 hover:bg-white/10 transition-colors">
-    {tech}
+const RoleBadge = ({ icon, title }) => (
+  <div className="flex items-center px-3 py-1.5 rounded-full bg-black/50 border border-white/10 text-gray-200 font-semibold text-sm mr-2 mb-2">
+    {icon}
+    {title}
   </div>
-));
+);
+
 
 const CTAButton = memo(({ href, text, icon: Icon }) => (
   <a href={href}>
@@ -78,7 +82,12 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["Computer Science Student", "Computer Enthusiast"];
-const TECH_STACK = ["Python","React", "Javascript", "Node.js"];
+const ROLES = [
+  { title: "AI / ML", icon: <BrainCircuit className="w-4 h-4 mr-2 text-blue-400" /> },
+  { title: "Cloud Architect", icon: <Cloud className="w-4 h-4 mr-2 text-sky-400" /> },
+  { title: "Full-Stack Developer", icon: <Braces className="w-4 h-4 mr-2 text-fuchsia-400" /> },
+  { title: "Generative AI", icon: <Sparkles className="w-4 h-4 mr-2 text-yellow-300" /> },
+];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/ai-mohammed/" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/mohammed-addi-9858aa19b/" },
@@ -187,11 +196,11 @@ const Home = () => {
                 </p>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-3 justify-start" data-aos="fade-up" data-aos-delay="1200">
-                  {TECH_STACK.map((tech, index) => (
-                    <TechStack key={index} tech={tech} />
-                  ))}
-                </div>
+<div className="flex flex-wrap gap-3 justify-start" data-aos="fade-up" data-aos-delay="1200">
+  {ROLES.map((role, idx) => (
+    <RoleBadge key={idx} icon={role.icon} title={role.title} />
+  ))}
+</div>
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
