@@ -152,7 +152,7 @@ const Home = () => {
 
   // Lottie configuration
   const lottieOptions = {
-    src: "https://lottie.host/58753882-bb6a-49f5-a2c0-950eda1e135a/NLbpVqGegK.lottie",
+    src: "https://lottie.host/542df6e4-dc05-496a-a191-635bfe0cb07f/YVZWjzSQbU.lottie",
     loop: true,
     autoplay: true,
     rendererSettings: {
