@@ -1,83 +1,89 @@
-# Portfolio 
-Hello everyone!  
-Let me introduce myself — I’m **Mohammed ADDI**. On this occasion, I’d like to share the portfolio website project that I’ve developed to showcase my work, skills, and accomplishments.
+# Mohammed Addi — Portfolio
 
-**Tech Stack used:**  
-- ReactJS  
-- Tailwind CSS  
-- AOS  
-- Framer Motion  
-- Lucide  
-- Material UI  
-- SweetAlert2  
+Personal portfolio website showcasing my projects, skills, and background as an AI/Computer Science student.
 
-**Website Link:**  
-[https://mohammed-addi.netlify.app/](https://mohammed-addi.netlify.app/)  
+**Live site:** [mohammed-addi.netlify.app](https://mohammed-addi.netlify.app/)
 
+## Tech Stack
+
+- React (Vite)
+- Tailwind CSS
+- Framer Motion
+- Material UI
+- AOS (scroll animations)
+- Lucide Icons
+- SweetAlert2
+
+## Features
+
+- Home, About, Portfolio, and Contact sections in a single-page layout
+- Project showcase with live demo links, GitHub links, and detail pages
+- Certificates & awards gallery
+- Responsive design, dark theme with a blue accent palette
+- Contact form powered by SweetAlert2 notifications
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS recommended)
+
+### Installation
+
+```bash
+git clone https://github.com/ai-mohammed/my-portfolio.git
+cd my-portfolio
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open the URL printed in your terminal (typically `http://localhost:5173`).
+
+### Production Build
+
+```bash
+npm run build
+```
+
+The optimized output is generated in the `dist` folder, which is what gets deployed.
+
+### Preview a Build Locally
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+The site is deployed on [Netlify](https://www.netlify.com/), which serves the contents of the `dist` folder committed to the `main` branch. To ship a new version:
+
+```bash
+npm run build
+git add dist
+git commit -m "build: update production bundle"
+git push
+```
+
+## Project Structure
+
+```
+src/
+├── Pages/          # Home, About, Portofolio, Contact, etc.
+├── components/      # Reusable UI components (Navbar, CardProject, ...)
+└── assets/          # Static assets
+public/              # Static files copied as-is (images, resume, icons)
+dist/                # Production build (served by Netlify)
+```
+
+## Contact
+
+- LinkedIn / GitHub / Instagram links are available directly on the site's Contact page.
 
 ---
 
-# Tutorial: Running the Project  
-
-Here’s a simple guide to run this project.  
-
-## Prerequisites  
-
-Ensure that you have already installed:  
-- **Node.js**  
-
----
-
-## Steps to Run the Project  
-
-1. **Download this project:**  
-
-   ```bash  
-   git clone https://github.com/ai-mohammed/my-portfolio.git  
-   ```  
-
-2. **Install all dependencies:**  
-
-   ```bash  
-   npm install  
-   ```  
-   Or use:  
-
-   ```bash  
-   npm install --legacy-peer-deps  
-   ```  
-
-3. **Run the project:**  
-
-   ```bash  
-   npm run dev  
-   ```  
-
-4. **Open in browser:**  
-
-   Access the application through the link displayed in your terminal.  
-
----
-
-## Creating a Production Build  
-
-To create a production-ready build:  
-
-1. Run the build command:  
-
-   ```bash  
-   npm run build  
-   ```  
-
-2. The build files will be saved in the `dist` folder. You can upload this folder to your hosting server.  
-
----
-
-## Notes  
-
-If you encounter issues while running the project, ensure that:  
-- Node.js is correctly installed.  
-- You’re in the correct project directory.  
-- All dependencies are installed without errors.  
-
----
+© 2026 Mohammed Addi. All rights reserved.
