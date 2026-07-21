@@ -31,6 +31,13 @@ const projects = [
   Link: "https://football-ai-x.streamlit.app/",
   Img: "/football-ai.png"
 },
+  {
+  id: 3,
+  Title: "Terra Immersion",
+  Description: "Terra Immersion is a travel agency platform for immersive trips",
+  Link: "https://terra-immersion-1.onrender.com/",
+  Img: "/terra-imersion.png"
+},
 ];
 
 const certifications = [

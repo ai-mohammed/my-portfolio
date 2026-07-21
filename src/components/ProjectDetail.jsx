@@ -159,6 +159,28 @@ const projects = [
   ]
 },
 
+{
+  id: 3,
+  Title: "Terra Immersion",
+  Description: `
+  Terra Immersion is a full-stack travel agency platform that helps travelers discover and book immersive trips, guided by a smart questionnaire and human travel advisors. Built with a React/TypeScript frontend and a Java/Quarkus backend backed by PostgreSQL, developed with a team of five.
+  `,
+  Img: "/terra-imersion.png",
+  TechStack: ["React", "TypeScript", "Vite", "Java", "Quarkus", "PostgreSQL", "Docker"],
+  Github: "https://github.com/ai-mohammed/Terra-immersion",
+  Link: "https://terra-immersion-1.onrender.com/",
+  status: "Completed",
+  teamType: "Group",
+  Features: [
+    "Smart trip recommendation questionnaire",
+    "Curated travel offers with detailed trip sheets",
+    "Tailor-made trip requests",
+    "Human travel advisor contact & chat",
+    "User accounts & booking follow-up",
+    "PostgreSQL-backed admin management"
+  ]
+},
+
 ];
 
 const ProjectDetails = () => {
