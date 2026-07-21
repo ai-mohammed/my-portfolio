@@ -212,14 +212,43 @@ const AboutPage = () => {
               </span>
             </h2>
             
-            <p 
-              className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed text-justify pb-4 sm:pb-0"
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed text-justify"
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-            I’m an Artificial Intelligence student based in France, deeply passionate about harnessing technology to solve real-world problems. 
-            My journey blends AI, data science, and web development, driving me to create innovative and impactful solutions. I’m always eager to collaborate with others.
-            Let’s bring bold ideas to life and shape the future together.           </p>
+              I'm an engineering student at EPITA in Paris, focused on artificial intelligence and software engineering.
+              I enjoy turning complex problems into concrete, deployable systems — backend APIs, data pipelines, machine learning models, and cloud-native applications.
+            </p>
+
+            <div data-aos="fade-right" data-aos-duration="1700" className="text-left">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-300 font-medium mb-3">
+                Main interests:
+              </p>
+              <ul className="space-y-2 text-base sm:text-lg text-gray-400">
+                {[
+                  "Applied AI and machine learning",
+                  "LLM-based information extraction",
+                  "Backend and distributed systems",
+                  "Computer vision and image processing",
+                  "MLOps and cloud-native development",
+                  "Football and sports analytics",
+                ].map((interest) => (
+                  <li key={interest} className="flex items-start gap-2.5">
+                    <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                    {interest}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-400 leading-relaxed text-justify pb-4 sm:pb-0"
+              data-aos="fade-right"
+              data-aos-duration="1900"
+            >
+              I also completed an international academic exchange at Griffith College Dublin.
+            </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
              <a
