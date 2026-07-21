@@ -146,6 +146,7 @@ const projects = [
   Img: "/football-ai.png", // Adapt with your real asset
   TechStack: ["Python", "YOLO", "Roboflow", "OpenCV", "Deep Learning"],
   Github: "https://github.com/ai-mohammed/football-ai", // Adapt to your own repo
+  Link: "https://football-ai-x.streamlit.app/",
   status: "In Progress", // or: "In Progress", "Completed" , "Coming Soon"  
   teamType: "Individual",            
   Features: [

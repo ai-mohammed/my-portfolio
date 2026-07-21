@@ -28,6 +28,7 @@ const projects = [
   id: 2,
   Title: "Football AI",
   Description: "Football AI is a computer vision toolkit for tracking",
+  Link: "https://football-ai-x.streamlit.app/",
   Img: "/football-ai.png"
 },
 ];
